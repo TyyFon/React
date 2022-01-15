@@ -2,6 +2,7 @@ import styles from './ColumnForm.module.scss';
 import { useState } from 'react';
 import Button from './../Button/Button.js'
 
+
 const ColumnForm = props => {
     const [title, setTitle] = useState('');
     const [icon, setIcon] = useState('');
@@ -10,7 +11,7 @@ const ColumnForm = props => {
         props.action({ title: title, icon: icon });
         setTitle('');
         setIcon('');
-        
+        console.log('props' , props)
     };
 
 	return (
