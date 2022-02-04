@@ -26,9 +26,7 @@ const initialState = {
       { id: 6, columnId: 3, title: 'Skyrim' }
     ],
     
-    serchString: [
-        { id: 1, currentSearch: '' }
-    ],
+    searchString: '',
   };
   
   export default initialState;
