@@ -1,12 +1,18 @@
 import styles from './CardForm.module.scss';
 import { useState } from 'react';
 import Button from './../Button/Button.js'
+import { useDispatch } from 'react-redux';
+
+
 
 const CardForm = props => {
     const [title, setTitle] = useState('');
+    const columnId = props.columnId;
+    const dispatch = useDispatch();
     const addCard = e => {
         e.preventDefault();
-        props.action({ title: title }, props.columnId);
+        dispatch({type: 'ADD_CARD', payload: { title, columnId }})
+        // props.action({ title: title }, props.columnId);
         setTitle('');
     };
            
