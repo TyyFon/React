@@ -2,6 +2,7 @@ import styles from './CardForm.module.scss';
 import { useState } from 'react';
 import Button from './../Button/Button.js'
 import { useDispatch } from 'react-redux';
+import { addCardAction } from '../../redux/store.js'
 
 const CardForm = props => {
     const [title, setTitle] = useState('');
@@ -9,7 +10,7 @@ const CardForm = props => {
     const dispatch = useDispatch();
     const addCard = e => {
         e.preventDefault();
-        dispatch({ type: 'ADD_CARD', payload: { title, columnId } })
+        dispatch(addCardAction({ title, columnId }));
         setTitle('');
     };
 
