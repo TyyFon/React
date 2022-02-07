@@ -1,0 +1,20 @@
+import styles from './NavBar.module.scss';
+import Container from './../Container/Container.js'
+
+const NavBar = () => {
+    return (
+        <nav>
+            <div className={styles.nav}>
+                <i className='fa fa-tasks tasks_icon'></i>
+                <ul>
+                    <li>
+                        <a href='/home'>Home</a>
+                        <a href='/favorite'>Favorite</a>
+                        <a href='/about'>About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    );
+};
+export default NavBar;

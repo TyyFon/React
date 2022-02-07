@@ -10,12 +10,6 @@ const Column = ({
     title, 
     action
 }) => {
-    // const searchString = useSelector(state => state.searchString);
-    // const cards = useSelector(
-    //     state => state.cards.filter(
-    //         card => card.columnId === id && card.title.toLowerCase().includes(searchString.toLowerCase())
-    //     )
-    // );
     const cards = useSelector(state => getFilteredCards(state, id));
 
     return <article className={styles.column}>
