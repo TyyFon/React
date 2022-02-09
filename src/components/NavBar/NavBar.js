@@ -7,7 +7,7 @@ const NavBar = () => {
                 <i className='fa fa-tasks tasks_icon'></i>
                 <ul>
                     <li>
-                        <a href='/home'>Home</a>
+                        <a href='/'>Home</a>
                         <a href='/favorite'>Favorite</a>
                         <a href='/about'>About</a>
                     </li>
