@@ -1,0 +1,24 @@
+* [33mcb56420[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m Add Router and Error page
+* [33mc151193[m[33m ([m[1;31morigin/main[m[33m)[m Add Home, About and Favorite pages. Render on main page
+* [33mb151046[m Add React Router and NavBar
+* [33md01b235[m Clean code
+* [33mfcc3679[m Add selectors and action creators
+* [33m722a4b1[m Add Redux in package.json
+* [33ma8155b2[m Clean code
+* [33m18482d6[m Finish filter
+* [33m8e777c0[m Filter not working
+* [33m6a194a0[m Add filter to column - not working
+* [33m1a4e46c[m Add searchString in initialState and handle and action for SerchForm input to overwrite state of searchString
+* [33m403a43c[m Add Redux code for Columns and Card
+* [33m24e919c[m Create Redux store and use it in List and Colum
+* [33m80ea560[m Finish app
+* [33me6d4ab1[m Tryed send AddCard to CardForm
+* [33mee34100[m Correct code for task 15.5
+* [33m634c514[m Tryed add input i columns - don't work
+* [33m0642859[m Add and styled Card in Column
+* [33m3adab34[m Add icons and style to inputs ColumnForm
+* [33mdb942bb[m Create ColumnForm component
+* [33m8ecda1f[m Prepare adding new column with button
+* [33m3191303[m Add container
+* [33m3f08b7e[m Start React project
+* [33mcd29827[m Initialize project using Create React App

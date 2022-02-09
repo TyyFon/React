@@ -14,6 +14,10 @@
       text-decoration: none;
       color: $color-light;
       margin: 10px;
+      &.linkActive {
+        transition: 0.2s;
+        color: $color-warning;
+      }
     }
   }
 }
