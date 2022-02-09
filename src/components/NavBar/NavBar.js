@@ -1,5 +1,4 @@
 import styles from './NavBar.module.scss';
-import Container from './../Container/Container.js'
 
 const NavBar = () => {
     return (
