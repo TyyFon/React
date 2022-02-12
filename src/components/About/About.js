@@ -3,7 +3,7 @@ import PageTitle from '../PageTitle/PageTitle';
 
 const About = () => {
     return (
-        <div clasName={styles.hero}>
+        <div className={styles.hero}>
            <PageTitle>
                About
             </PageTitle>
