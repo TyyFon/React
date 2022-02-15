@@ -12,8 +12,9 @@ const CardForm = props => {
         e.preventDefault();
         dispatch(addCardAction({ title, columnId }));
         setTitle('');
+        
     };
-
+    
     return (
         <form className={styles.form} onSubmit={addCard}>
             <input
