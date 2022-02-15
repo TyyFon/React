@@ -15,6 +15,7 @@ export const getAllLists = ({ lists }) => lists;
 export const addColumnAction = payload => ({ type: 'ADD_COLUMN', payload });
 export const addCardAction = payload => ({ type: 'ADD_CARD', payload });
 export const updateSearchingAction = payload => ({ type:'UPDATE_SEARCHSTRING' , payload });
+export const addListAction = payload => ({type: 'ADD_LIST', payload });
 
   const reducer = (state, action) => {
     switch (action.type) {
@@ -29,6 +30,10 @@ export const updateSearchingAction = payload => ({ type:'UPDATE_SEARCHSTRING' , 
         case 'UPDATE_SEARCHSTRING':
             return {
                 ...state, searchString: action.payload
+            };
+        case 'ADD_LIST':
+            return {
+                ...state, lists: [...state.lists, { ...action.payload, id: shortid() }]
             };
         default:
             return state;

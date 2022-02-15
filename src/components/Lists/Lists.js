@@ -2,6 +2,7 @@ import styles from './Lists.module.scss';
 import { getAllLists } from '../../redux/store';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+import ListForm from './../ListForm/ListForm.js'
 
 
 const Lists = () => {
@@ -15,6 +16,7 @@ const Lists = () => {
                     <p>{list.description}</p>
                 </Link>
             ))}
+            <ListForm />
         </section>
     );
 }
