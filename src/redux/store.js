@@ -11,7 +11,7 @@ export const getColumnsByList = ({ columns }, listId) => columns
 export const getListById = ({ lists }, listId) => lists.find(list => list.id === listId)
 export const getAllLists = ({ lists }) => lists;
 export const getFilteredFavoriteCards = ({ cards }) =>
-  cards.filter((card) => card.isFavorite === true);
+  cards.filter((card) => card.isFavorite);
 
 
 //actions

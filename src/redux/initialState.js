@@ -39,12 +39,12 @@ const initialState = {
     ],
   
     cards: [
-      { id: 1, columnId: 1, title: 'This is Going to Hurt', isFavorie: true },
-      { id: 2, columnId: 1, title: 'Interpreter of Maladies', isFavorie: false},
-      { id: 3, columnId: 2, title: 'Harry Potter',  isFavorie: false },
-      { id: 4, columnId: 2, title: 'Star Wars',  isFavorie: false },
-      { id: 5, columnId: 3, title: 'The Witcher',  isFavorie: false },
-      { id: 6, columnId: 3, title: 'Skyrim',  isFavorie: false }
+      { id: 1, columnId: 1, title: 'This is Going to Hurt', isFavorite: true },
+      { id: 2, columnId: 1, title: 'Interpreter of Maladies', isFavorite: false},
+      { id: 3, columnId: 2, title: 'Harry Potter',  isFavorite: false },
+      { id: 4, columnId: 2, title: 'Star Wars',  isFavorite: false },
+      { id: 5, columnId: 3, title: 'The Witcher',  isFavorite: true },
+      { id: 6, columnId: 3, title: 'Skyrim',  isFavorite: false }
     ],
     
     searchString: '',
