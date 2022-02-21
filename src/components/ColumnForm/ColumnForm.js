@@ -2,7 +2,7 @@ import styles from './ColumnForm.module.scss';
 import { useState } from 'react';
 import Button from './../Button/Button.js'
 import { useDispatch } from 'react-redux';
-import { addColumnAction } from '../../redux/store.js'
+import { addColumnAction } from '../../redux/columnsRedux.js'
 
 const ColumnForm = (props) => {
     const dispatch = useDispatch();
@@ -11,11 +11,10 @@ const ColumnForm = (props) => {
     const listId = props.listId;
     const addColumn = e => {
         e.preventDefault();
-        dispatch(addColumnAction({ title, icon, listId }));
+        dispatch(addColumnAction({ title, icon, listId}));
         setTitle('');
         setIcon('');
-    };
-   
+    };   
     return (
         <form className={styles.form} onSubmit={addColumn}>
             <span className={styles.span}>

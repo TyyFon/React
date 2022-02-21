@@ -2,7 +2,7 @@ import styles from './CardForm.module.scss';
 import { useState } from 'react';
 import Button from './../Button/Button.js'
 import { useDispatch } from 'react-redux';
-import { addCardAction } from '../../redux/store.js'
+import { addCardAction } from '../../redux/cardsRedux.js'
 
 const CardForm = props => {
     const [title, setTitle] = useState('');
@@ -11,10 +11,8 @@ const CardForm = props => {
     const addCard = e => {
         e.preventDefault();
         dispatch(addCardAction({ title, columnId }));
-        setTitle('');
-        
+        setTitle('');        
     };
-    
     return (
         <form className={styles.form} onSubmit={addCard}>
             <input

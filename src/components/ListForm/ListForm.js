@@ -2,21 +2,18 @@ import styles from './ListForm.module.scss';
 import { useState } from 'react';
 import Button from './../Button/Button.js'
 import { useDispatch } from 'react-redux';
-import { addListAction } from '../../redux/store.js'
+import { addListAction } from '../../redux/listsRedux.js'
 
-
-const ListForm = (props) => {
+const ListForm = () => {
     const dispatch = useDispatch();
     const [title, setTitle] = useState('');
-    const [description, setDescription] = useState('');
-    
+    const [description, setDescription] = useState('');    
     const addList = e => {
         e.preventDefault();
         dispatch(addListAction({ title, description }));
         setTitle('');
         setDescription('');
-    };
-   
+    };   
     return (
         <form className={styles.form} onSubmit={addList}>
             <span className={styles.span}>

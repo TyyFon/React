@@ -9,7 +9,6 @@ import Error from './components/Error/Error.js';
 
 const App = () => {
     return (
-
         <main>
             <NavBar />
             <Container>

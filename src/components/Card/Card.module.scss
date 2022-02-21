@@ -11,6 +11,15 @@
     justify-content: space-between;
     font-weight: bold;
 }
+
 .isFavorite {
     color: red;
-  }
+}
+
+.wrapper {
+    position: relative;
+    background: $color-light;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}

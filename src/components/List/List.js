@@ -3,20 +3,19 @@ import Column from './../Column/Column';
 import ColumnForm from './../ColumnForm/ColumnForm';
 import SearchForm from '../SearchForm/SearchForm';
 import { useSelector } from 'react-redux';
-import { getAllColumns } from '../../utils/getAllColumns.js';
-import { getListById } from '../../redux/store';
+import { getColumnsByList } from '../../redux/columnsRedux.js';
+import { getListById } from '../../redux/listsRedux.js';
 import { useParams } from 'react-router';
 import { Navigate } from 'react-router-dom';
 
 const List = (
 	) => {
 	const { listId } = useParams();
-	const columns = useSelector(state => getAllColumns(state, listId));
+	const columns = useSelector(state => getColumnsByList(state, listId));
 	const listData = useSelector(state => getListById(state, listId));
-	
-	if(!listData) return <Navigate to="/" />
-	return (
 		
+	if(!listData) return <Navigate to="/" />
+	return (		
 		<div className={styles.list}>
 		<header className={styles.header}>
 			<h2 className={styles.title}>
